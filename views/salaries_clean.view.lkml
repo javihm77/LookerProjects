@@ -91,7 +91,7 @@ view: salaries_clean {
     type: count_distinct
     sql: ${job_title} ;;
     value_format:"0"
-    drill_fields: [job_title,count]
+    drill_fields: [job_title,count,salary_avg]
   }
 
   measure: distinct_countries {
@@ -99,6 +99,6 @@ view: salaries_clean {
     type: count_distinct
     sql: ${employee_residence} ;;
     value_format:"0"
-    drill_fields: [employee_residence,count]
+    drill_fields: [employee_residence,count,salary_avg]
   }
 }
