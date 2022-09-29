@@ -9,7 +9,7 @@ include: "/views/**/*.view"
 
 datagroup: dwh_conferencias_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "6 hour"
 }
 
 persist_with: dwh_conferencias_default_datagroup
